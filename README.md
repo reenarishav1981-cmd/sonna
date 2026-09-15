@@ -10,15 +10,15 @@ pulling live data from it (designs, price examples, home-visit booking).
 - **Price Transparency** → `GET /api/pricing/examples` → live breakdown + advertised-vs-actual toggle
 - **Order stage tracker** (signature SAMPLE→SELECTED→PRICE→VERIFIED→DELIVERED) → `/api/orders` (model + routes ready; not yet wired to a UI screen — see "Not done" below)
 
-## 1. Backend
-
+## 1. Backend# loads sample designs + price examples
+# edit MONGO_URI if not using local Mongo
 ```bash
 cd backend
-cp .env.example .env        # edit MONGO_URI if not using local Mongo
+cp .env.example .env        
 npm install
-npm run seed                # loads sample designs + price examples
-npm run dev                 # http://localhost:5000
-```
+npm run seed                
+npm run dev                
+``` # http://localhost:5000
 
 Needs a MongoDB instance reachable at `MONGO_URI` (local `mongod`, or Atlas connection string).
 
