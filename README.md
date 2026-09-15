@@ -19,7 +19,7 @@ npm install
 npm run seed                
 npm run dev                
 ``` # http://localhost:5000
-
+##for admin login pass key is 123456789
 Needs a MongoDB instance reachable at `MONGO_URI` (local `mongod`, or Atlas connection string).
 
 ### API surface
